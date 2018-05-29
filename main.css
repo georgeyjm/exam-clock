@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'Digital';
+    src: url('digital.ttf');
+}
+
+* {
+    margin: 0;
+}
+
+html, body {
+    background: black;
+    color: white;
+    font-family: 'Avenir', 'Helvetica';
+}
+
+.big-clock-container {
+    width: 100%;
+    margin: 150px 0 60px 0;
+    text-align: center;
+    font-size: 220px;
+    font-family: 'Digital', 'Consolas', 'Courier';
+}
+
+.exams-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.exam {
+    width: 400px;
+    height: 200px;
+    /* border: 0.5pt red dashed; */
+}
+
+.exam .name {
+    margin-bottom: 8px;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.exam .paper::before {
+    content: ' / '
+}
+
+.exam td {
+    padding: 0 0 6px 10px;
+    font-size: 28px;
+    font-weight: lighter;
+}
+
+.exam .time {
+    font-family: 'Consolas', 'Courier';
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.exam .time:before {
+    content: ' ';
+}
+
+.exam .passed .time {
+    text-decoration: line-through;
+}
+
+.exam .passed {
+    color: #999;
+}
